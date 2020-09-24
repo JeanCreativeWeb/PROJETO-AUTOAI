@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #0b090a;
+    background-image: url(/Styles/Images/background-contato.svg);
+    background-repeat: no-repeat;
+    background-size: 900px;
+    background-position: right;
+    background-position-y: 200px;
+}
+@media only screen and (max-width: 1200px){
+    body{
+        background-position-x: 1000px;
+    }
+}
+@media only screen and (max-width: 1150px){
+    body{
+        background-position-x: 1950px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    body{
+        background-image: none;
+    }
+}

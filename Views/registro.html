@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>REGISTRO</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/CSS/login.css"><!--LINK ESTILOS-->
+    <link rel="stylesheet" href="/Styles/CSS/registro.css"><!--LINK ESTILOS-->
+    <link rel="stylesheet" href="/Styles/CSS/buttons.css"><!--LINK buttons-->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"><!--FONTE DOS TEXTOS-->
+
+
+</head>
+<body>
+
+    <div class="login">
+
+        <div class="banner-login">
+
+            <div class="painelInterection">
+                <div class="logo">
+                    <img src="/Styles/Logos/logoCheckapp-ICO.svg" class="logo-marca" alt="Logo" onclick="redirectHome()">
+                </div>
+                <div class="introducaoLogin">
+                    <div class="tabLine"></div>
+                    <div class="content-text">
+                        <p id="text-01">Seja bem vindo!</p>
+                    </div>
+                    <p>Preencha o formulário para criar sua conta</p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <!--
+            <div id="btn-voltar">
+                <a href="" id="btnSair"></a>
+            </div>
+            -->
+
+        </div>
+
+
+        <div class="login-form">
+            <div class="login-form-wrapperRegister">
+                
+                <form class="formularioRegister">
+
+                    <div class="itensForm">
+                        <div class="form-group">
+                            <label for="nomeFantasia" class="nomeFantasia">Nome Fantasia</label>
+                            <input type="text" class="form-control" id="nomeFantasia">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="CNPJ" class="labelCNPJ">CPF/CNPJ</label>
+                            <input type="text" class="form-control" id="CNPJ"> <!--validar type-->
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eMail">E-mail</label>
+                        <input type="email" class="form-control" id="eMail">
+                    </div>
+
+                    <div class="contactFone">
+                        <div class="form-group">
+                            <label for="dddCidade" class="labelddd">DDD</label>
+                            <input type="TEXT" class="form-control" id="dddCidade"> <!--validar type-->
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone" class="labelTelefone">Telefone</label>
+                            <input type="email" class="form-control" id="telefone">
+                        </div>
+                    </div>
+                      
+                    <div class="passwordForm">
+                        <div class="form-group userPasword">
+                            <label for="senha">Senha</label>
+                            <input type="password" class="form-control" id="senha">
+                        </div>
+      
+                        <div class="form-group userPasword">
+                            <label for="senhaValidation" class="labelSenhaValidation">Confirmar senha</label>
+                            <input type="password" class="form-control" id="senhaValidation">
+                        </div>
+                    </div>
+
+                    <button type="button" class="btnAcessar" id="btnPadrao">CRIAR CONTA</button>
+
+                </form>
+                <p class="helpPassword">Política de uso e termos de privacidade</p>
+            </div>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <script>// redirecionamento de páginas
+    function redirectHome (){
+    window.location.href = "../Views/home.html";
+    }
+    </script>
+
+    
+
+    
+</body>
+</html>

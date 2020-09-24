@@ -1,0 +1,44 @@
+#btnPadrao{
+    background-color: #ffd200;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    height: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#btnPadrao:hover{
+    background-color: yellow;
+}
+
+#btnVideo{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px white;
+    width: 250px;
+    height: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+    border-width: medium;
+    border-style: solid;
+    cursor: pointer;
+}
+@media only screen and (max-width: 680px){
+    #btnVideo{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+}
+
+#btnVideo:hover{
+    background-color: yellow;;
+    color: black;
+    border: 1px yellow;
+}

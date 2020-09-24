@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+
+/*MENU PRINCIPAL*/
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px 100px 20px 100px;
+}
+
+@media only screen and (max-width: 700px){
+    header {
+        padding: 20px 50px 20px 50px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    header {
+        padding: 20px 50px 20px 20px;
+    }
+}
+
+.brangingLogo img{
+    max-width: 50px;
+    height: 50px;
+    margin-top: 5px;   
+}
+.objectsNavegations{
+    display: flex;
+}
+.informationsBussines{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+.objectsActions {
+    display: flex;
+    align-items: center;
+}
+.btnContact{
+    margin-left: 30px;
+}
+@media only screen and (max-width: 400px){
+    .btnContact{
+        margin-left: 0px;
+    }
+}
+.btn-informationsBussines{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+.btn-informationsBussines :hover{
+    border: none;
+}
+@media only screen and (max-width: 800px){
+    .btn-informationsBussines{
+        width: 100px;
+    }
+}
+.iconeLogin{
+    background-image: url(/Styles/Icons/User-ICO.svg);
+    width: 40px;
+    height: 40px;
+}
+.btnRegister{
+    margin-left: 30px;
+}
+@media only screen and (max-width: 1200px){
+    .btnRegister{
+        display: none;
+    }
+}
+.btnLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 600px){
+    .btnLogin{
+        display: none;
+    }
+}
+.btnLogin p{
+    margin-left: 10px;
+    color: #e9e9e9;
+}
+.btnLogin p:hover{
+    color: yellow;
+}
+
+.btn-objectsActions{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 0px;
+}
+
+
+
+/*CONTAINER*/
+
+@media only screen and (max-width: 700px){
+    .containerApresentation{
+    
+        padding: 50px 50px 0px 50px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .containerApresentation{
+    
+        padding: 50px 50px 0px 20px;
+        width: 100%;
+    }
+}
+
+.containerApresentation h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: white;
+}
+
+.containerApresentation h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}

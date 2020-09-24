@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>CONTATO</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--MEDIA QUERIES-->
+    <link rel="stylesheet" href="/Styles/CSS/contato.css">
+    <link rel="stylesheet" href="/Styles/CSS/header.css"><!--LINK ESTILOS-->
+    <link rel="stylesheet" href="/Styles/CSS/buttons.css"><!--LINK ESTILOS-->
+    <link rel="stylesheet" href=""><!--LINK SCRIPTs-->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"><!--FONTE DOS TEXTOS-->
+</head>
+
+<body>
+    
+    <header><!--CABEÇALHO-->
+        <div class="objectsNavegations">
+            <div class="brangingLogo">
+                <img src="/Styles/Logos/logoCheckapp-ICO.svg" alt="Logo Marca" onclick="redirectHome()">
+            </div>
+            <div class="informationsBussines">
+                <div class="btnSobre">
+                    <button class="btn-informationsBussines" onclick="redirectSobre()">
+                        Sobre
+                    </button>
+                </div>
+                <div class=" btnContact">
+                    <button class="btn-informationsBussines">
+                        Contato
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="objectsActions">
+            <div class="btnLogin">
+                <button class="btn-objectsActions" onclick="redirectLogin()">
+                    <div class="btnLogin">
+                        <div class="iconeLogin"></div>
+                        <p>Login</p>
+                    </div>
+                </button>
+            </div>
+            <div class="btnRegister">
+                <button class="btn-objectsActions" id="btnPadrao">
+                    ABRA SUA CONTA
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav><!--SLIDE-->
+        <div class="containerApresentation">
+            <div>
+                <h1>Contatos</h1>
+            </div>
+            
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </nav>
+
+    <script>// redirecionamento de páginas
+        function redirectHome (){
+        window.location.href = "../Views/home.html";
+        }
+        function redirectContato (){
+        window.location.href = "../Views/contato.html";
+        }
+        function redirectSobre (){
+            window.location.href = "../Views/sobre.html";
+        }
+        function redirectLogin (){
+            window.location.href = "../Views/login.html";
+        }
+        function redirectregistro (){
+            window.location.href = "../Views/login.html";
+        }
+    </script>
+
+</body>
+</html>
