@@ -75,18 +75,23 @@
 
     <!--POP-UP Video-->
 
-    <div id="modalVideo" class="Container">
+    <div id="Container" class="">
         <div class="conteudo">
             <video class="videoAnimation" controls>
                 <source src="/Styles/Video/CheckApp - Tecnologia para vender mais.mp4" type="video/mp4">
             </video>
         </div>
+
+        <button id='btnFechar' onclick="fecharVideo()">
+            
+        </button>
+
     </div>
 
 
-    
 
-    <script>// redirecionamento de páginas
+    <script type="text/javascript">// REDIRECIONAMENTO
+
     function redirectHome (){
     window.location.href = "../Views/home.html";
     }
@@ -103,20 +108,15 @@
         window.location.href = "../Views/registro.html";
     }
 
-
-    // VALIDAÇÃO DE DADOS PARA MOSTRAR POP UP
+    // POP-UP
 
     function execultarVideo(){
-        const conteudo = document.getElementById(modalVideo);
-        conteudo.classList.add('mostrar');
-        }
+        document.getElementById('Container').style.display = 'flex'; // adiciona display flex no elemento ID Container (que por padão é none) para mostrar o vídeo.
+    }
 
-        const popUp = document.querySelector('.btnVideo');
-
-        popUp.addEventListener('click', function(){
-        iniciaPopUp('modalVideo');
-    });
-
+    function fecharVideo(){
+        document.getElementById('Container').style.display = 'none'; // fecha display 
+    }
     </script>
 
 </body>

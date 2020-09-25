@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/Styles/CSS/admin.css">
+    
+    <title>Login</title>
+</head>
+<body>
+
+    <nav class="flexNav">
+
+        <header class="flexNavHeader">
+            <div class="flexHeader">
+                <nav class="menuHeader">
+                    <div class="logo">
+                        <img src="/Styles/Logos/logoCheckapp-ICO.svg" alt="Logo marca" id="logoMarca">
+                    </div>
+                    <div class="menuHeader">
+                        <ul class="listaMenuHeader">
+                            <li>
+                                <i class="clientes-ICONE"></i>
+                            </li>
+                            <li>
+                                <i class="chamados-ICONE"></i>
+                            </li>
+                            <li>
+                                <i class="usuarios-ICONE"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <button class="sair" onclick="validarSaida()">Sair</button>
+            </div>
+        </header>
+
+        <section>
+
+            <div class="sectionClientes">
+
+                <div id="headerClientes">
+                    <p class="titleSection">CLIENTES</p>
+                    <div class="interactionsClientes">
+                        <div class="iconesInteractions">
+                            <i class=adicionarNovoCliente></i>
+                            <i class="filtroStatusCliente-ICONE"></i>
+                        </div>
+                        <input type="text" class="pesquisaClientes" placeholder="Pesquisar">
+                    </div>
+                </div>
+
+                <aside>
+                    <span class="spanCard">
+                        <div class="spanNovoCliente">
+                            <div class="cardCliente">
+                                <div>
+                                    <p class="title">Nome Fantasia do Cliente</p>
+                                </div>
+            
+                                <div class="statusCliente">
+                                    <p class="textStatusNovo">NOVO</p>
+                                </div>
+                            </div>
+                            <div class="formularioCliente">
+                                <form class="itensFormulario">
+
+                                    <div class="flexCardForm">
+
+                                        <div class="flexItemForm">
+                                            <div class="formGroup">
+                                                <label for="perfil">Perfil do usuário</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="formGroup">
+                                                <label for="perfil">CNPJ</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="flexItemForm">
+                                            <div class="formGroup">
+                                                <label for="perfil">DDD</label>
+                                                <input type="text">
+
+                                            </div>
+                                            <div class="formGroup">
+                                                <label for="perfil">Telefone</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="flexCardForm">
+
+                                        <div class="flexItemForm">
+                                            <div class="formGroup">
+                                                <label for="perfil">E-mail</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="formGroup">
+                                                <label for="perfil">Data de registro</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="flexItemForm">
+                                            <div class="formGroup">
+                                                <label for="perfil">UF</label>
+                                                <input type="text">
+
+                                            </div>
+                                            <div class="formGroup">
+                                                <label for="perfil">Cidade</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </form>
+                            </div>
+                            <br>
+                            <br>
+                            
+                            <i class="editSpan"></i>
+                            <br>
+                            <br>
+                        </div>
+                        
+                    </span>
+                </aside>
+            
+                
+
+            </div>
+
+
+        </section>
+
+    </nav>
+
+    <span id="containerSair">
+        <div class="conteudo">
+            <i class="iconeQuestion"></i>
+
+            <p class="textPopUP"> Tem certeza que deseja sair?</p>
+            
+            <div class="btnRedirect">
+                <button class="btnContinuarPopUP" onclick="fecharPopUP()">CONTINUAR</button>
+                <button class="btnSairPopUP" onclick="redirectLogin()">SAIR</button>
+            </div>
+        </div>
+    </span>
+
+    <script type="text/javascript"> // redirecionamento de páginas
+
+
+        function validarSaida(){
+            document.getElementById('containerSair').style.display = 'flex'; // adiciona display flex no elemento ID Container (que por padão é none) para mostrar o vídeo.
+        }
+        function fecharPopUP(){
+            document.getElementById('containerSair').style.display = 'none'; // adiciona display flex no elemento ID Container (que por padão é none) para mostrar o vídeo.
+        }
+
+        function redirectLogin (){
+        window.location.href = "../Views/login.html";
+        }
+
+    </script>
+
+    
+    
+</body>
+</html>

@@ -1,9 +1,6 @@
-*{
-    box-sizing: border-box;
-}
+@import 'reset.css';
 
 body{
-    margin: 0;
     background-color: #0b090a;
     background-image: url(/Styles/Images/backgraund-home.svg);
     background-repeat: no-repeat;
@@ -61,10 +58,6 @@ body{
 }
 
 
-
-
-
-
 .containerApresentation{
     
     padding: 100px 50px 50px 100px;
@@ -89,13 +82,42 @@ nav{
     width: 700px;
     height: 400px;
 }
-.Container.mostrar{
-    display: flex;
+
+@media only screen and (max-width: 700px){
+    .videoAnimation{
+        width: 600px;
+    }
 }
+
+@media only screen and (max-width: 600px){
+    .videoAnimation{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .videoAnimation{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .videoAnimation{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .videoAnimation{
+        width: 200px;
+    }
+}
+
 .mostrar .modal {
     animation: modal 0.1s;
 }
-.Container{
+
+#Container{
     background-color: rgba(0, 0, 0, .9);
     width: 100vw;
     height: 100vh;
@@ -103,10 +125,56 @@ nav{
     top: 0;
     left: 0;
     z-index: 2000;
-    display: none;
+    display: none; /*sedisplay Flex, mostra pop-up*/
     justify-content: center;
     align-items: center;
 }
+
+
+#btnFechar{
+    position: fixed;
+    margin-top: -214px;
+    margin-left: 400px;
+    background-image: url(/Styles/Icons/Close-ICO.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    padding: 40px 40px;
+}
+
+@media only screen and (max-width: 1200px){
+    #btnFechar{
+        margin-left: 300px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    #btnFechar{
+        margin-left: 250px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #btnFechar{
+        margin-left: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #btnFechar{
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #btnFechar{
+        margin-left: 100px;
+    }
+}
+
+
+
 .conteudo{
     background: white;
     width: 70%;
@@ -116,6 +184,7 @@ nav{
     align-items: center;
     justify-content: center;
     text-align: -webkit-center;
+    display: flex;
 }
 .icone-Shield{
     padding: 50px;
