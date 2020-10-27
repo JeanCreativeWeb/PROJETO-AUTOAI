@@ -47,7 +47,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     font-size: 70px;
     font-weight: 900;
-    color: white;
+    color: yellow;
 }
 
 .containerApresentation h3{
@@ -55,14 +55,16 @@ body{
     font-size: 30px;
     font-weight: 500;
     color: white;
+    margin-top: 30px;
+
 }
 
 
 .containerApresentation{
-    
     padding: 100px 50px 50px 100px;
     width: 100%;
 }
+
 .interactionsNav{
     margin-top:50px;
 }

@@ -26,3 +26,15 @@ body{
         background-image: none;
     }
 }
+
+.containerApresentation{
+    padding: 100px 50px 50px 100px;
+    width: 100%;
+}
+
+.contact-fones{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    
+}
