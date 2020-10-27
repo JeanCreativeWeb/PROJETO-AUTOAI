@@ -55,23 +55,54 @@
             <div>
                 <h1>Contatos</h1>
             </div>
+            <div class="containerContatos">
 
-            <div class="contact-fones">
-                <p>TELEFONES</p>
+                <div class="contact-fones">
+                    <div>
+                        <div>
+                            <p class="title-contacts">TELEFONES</p>
+                        </div>
+                        <ul>
+                            <p>
+                                + 55 (11) 3031-2361
+                            </p>
+                            <p>
+                                + 55 (11) 3031-0162
+                            </p>
+                            <p>
+                                + 55 (11) 95580-8777
+                            </p>
+                        </ul>
+                    </div>
+                </div>
 
-                <ul>
-                    <p>
-                        + 55 (11) 3031-2361
-                    </p>
-                    <p>
-                        + 55 (11) 3031-0162
-                    </p>
-                    <p>
-                        + 55 (11) 95580-8777
-                    </p>
-                </ul>
+                <div class="contact-emails">
+                    <div>
+                        <div>
+                            <p class="title-email">E-MAIL</p>
+                        </div>
+                        <ul>
+                            <p>
+                                suporte@checkapp.net.br 
+                            </p>
+                            <p>
+                                vendas@checkapp.net.br
+                            </p>
+                            <p>
+                                financeiro@checkapp.net.br
+                            </p>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            
+
+            <div class="containerRedesSociais">
+                
+                <i class="ico-Facebook" onclick="redirectFacebook()"></i>
+                <i class="ico-Instagram" onclick="redirectInstagram()"></i>
+                <i class="ico-YouTube" onclick="redirectYoutube()"></i>
+
+            </div>
             
             <br>
             <br>
@@ -92,8 +123,14 @@
         function redirectLogin (){
             window.location.href = "../Views/login.html";
         }
-        function redirectregistro (){
-            window.location.href = "../Views/login.html";
+        function redirectFacebook (){
+            window.location.href = "https://www.facebook.com/checkapp.net.br";
+        }
+        function redirectInstagram (){
+            window.location.href = "https://www.instagram.com/autoai.com.br/";
+        }
+        function redirectYoutube (){
+            window.location.href = "https://www.youtube.com/channel/UCsGwccnjN8Ptsv7y7JvZg2w";
         }
     </script>
 
