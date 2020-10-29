@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Styles/CSS/admin.css">
-    <title>ADMIN</title>
+    <link rel="stylesheet" href="/Styles/CSS/painel-usuario.css">
+    <title>PAINEL USUÁRIO</title>
 </head>
 <body>
     <nav class="flexNav">
@@ -15,7 +15,6 @@
                         <img src="/Styles/Logos/logoCheckapp-ICO.svg" alt="Logo marca" id="logoMarca">
                     </div>
                     <nav class="links">
-                        <label class="clientes-ICONE" for="rd_clientes"></label>
                         <label class="chamados-ICONE" for="rd_chamados"></label>
                         <label class="usuarios-ICONE" for="rd_usuarios"></label>
                     </nav>
@@ -24,93 +23,9 @@
             </div>
         </header>
         <div class="scroll">
-            <input type="radio" name="grupo" id="rd_clientes" checked="true">
-            <input type="radio" name="grupo" id="rd_chamados">
+            <input type="radio" name="grupo" id="rd_chamados" checked="true">
             <input type="radio" name="grupo" id="rd_usuarios">
             <section class="sections">
-                <!--PAGE CLIENTES-->
-                <section class="bloco" id="clientes">
-                    <div class="sectionClientes">
-                        <div id="headerClientes">
-                            <p class="titleSection">CLIENTES</p>
-                            <div class="interactionsClientes">
-                                <div class="iconesInteractions">
-                                    <i class=adicionarNovoCliente></i>
-                                    <i class="filtroStatusCliente-ICONE"></i>
-                                </div>
-                                <input type="text" class="pesquisaClientes" placeholder="Pesquisar">
-                            </div>
-                        </div>
-                        <aside>
-                            <span class="spanCard">
-                                <div class="spanNovoCliente">
-                                    <div class="cardCliente">
-                                        <div>
-                                            <p class="title">Nome Fantasia do Cliente</p>
-                                        </div>
-                                        <div class="statusCliente">
-                                            <p class="textStatusNovo">NOVO</p>
-                                        </div>
-                                    </div>
-                                    <div class="formularioCliente">
-                                        <form class="itensFormulario">
-                                            <div class="flexCardForm">
-                                                <div class="flexItemForm">
-                                                    <div class="formGroup">
-                                                        <label for="perfil">Perfil do usuário</label>
-                                                        <input type="text">
-                                                    </div>
-                                                    <div class="formGroup">
-                                                        <label for="perfil">CNPJ</label>
-                                                        <input type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="flexItemForm">
-                                                    <div class="formGroup">
-                                                        <label for="perfil">DDD</label>
-                                                        <input type="text">
-        
-                                                    </div>
-                                                    <div class="formGroup">
-                                                        <label for="perfil">Telefone</label>
-                                                        <input type="text">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="flexCardForm">
-                                                <div class="flexItemForm">
-                                                    <div class="formGroup">
-                                                        <label for="perfil">E-mail</label>
-                                                        <input type="text">
-                                                    </div>
-                                                    <div class="formGroup">
-                                                        <label for="perfil">Data de registro</label>
-                                                        <input type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="flexItemForm">
-                                                    <div class="formGroup">
-                                                        <label for="perfil">UF</label>
-                                                        <input type="text">
-                                                    </div>
-                                                    <div class="formGroup">
-                                                        <label for="perfil">Cidade</label>
-                                                        <input type="text">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <i class="editSpan"></i>
-                                    <br>
-                                    <br>
-                                </div>
-                            </span>
-                        </aside>
-                    </div>
-                </section>
                 <!--PAGE CHAMADOS-->
                 <section class="bloco" id="chamados">
                     <div class="sectionClientes">

@@ -53,6 +53,17 @@ body{
     margin-left: 50px;
 }
 
+.contact-emails p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact-fones p{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 
 .containerContatos{
     display: flex;

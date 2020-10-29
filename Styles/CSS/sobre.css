@@ -24,6 +24,25 @@ body{
 }
 
 .containerApresentation{
-    padding: 100px 50px 50px 100px;
+    padding: 49px 650px 350px 100px;
     width: 100%;
+    background-image: url('/Styles/Icons/CheckApp-TelaLogin.svg');
+    background-repeat: no-repeat;
+    background-position-x: 700px;
+    background-position-y: 50px;
+    background-size: 300px;
+    display: table-caption;
+}
+
+.containerApresentation p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.section-intro{
+    background-color: yellow;
+    display: flex;
+    padding-inline-end: 10px;
 }

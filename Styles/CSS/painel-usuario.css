@@ -516,11 +516,8 @@ input{
 	background-color: #f5f7f9;
 }
 
-#rd_chamados:checked ~ .sections{
-	margin-top: -100vh;
-}
 #rd_usuarios:checked ~ .sections{
-	margin-top: -200vh;
+	margin-top: -100vh;
 }
 
 .bloco img{

@@ -23,12 +23,12 @@
             <div class="informationsBussines">
                 <div class="btnSobre">
                     <button class="btn-informationsBussines" onclick="redirectSobre()">
-                        Sobre
+                        SOBRE
                     </button>
                 </div>
                 <div class=" btnContact">
                     <button class="btn-informationsBussines">
-                        Contato
+                        CONTATO
                     </button>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                 </button>
             </div>
             <div class="btnRegister">
-                <button class="btn-objectsActions" id="btnPadrao">
+                <button class="btn-objectsActions" id="btnPadrao" onclick="redirectRegistro()">
                     ABRA SUA CONTA
                 </button>
             </div>
@@ -121,6 +121,9 @@
             window.location.href = "../Views/sobre.html";
         }
         function redirectLogin (){
+            window.location.href = "../Views/login.html";
+        }
+        function redirectRegistro (){
             window.location.href = "../Views/login.html";
         }
         function redirectFacebook (){
