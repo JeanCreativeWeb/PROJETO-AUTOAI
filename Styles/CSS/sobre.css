@@ -42,7 +42,121 @@ body{
 }
 
 .section-intro{
-    background-color: yellow;
+    background-color: white;
     display: flex;
     padding-inline-end: 10px;
+    width: 100%;
+    height: 600px;
+    
+}
+
+.section-ferramentas{
+    background-color: white;
+    display: flex;
+    padding-inline-end: 10px;
+    width: 100%;
+    height: 600px;
+}
+
+.text-introduction{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 72px;
+}
+
+.text-introduction p{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-introduction h1{
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.background-Intro{
+    background-color: #ffd200;
+    border-radius: 5px;
+    border-radius: 0px 472px 0px 0px;
+    position: relative; 
+    margin-top: -80px;
+    display: flex;
+    width: 800px;
+}
+.desktop-image{
+    background-image: url('/Styles/Icons/CheckApp-TelaInicial.svg');
+    background-repeat: no-repeat;
+    background-size: 700px;
+    background-position-x: 70px;
+    background-position-y: 160px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    width: 820px;
+}
+
+/*banner 2*/
+
+.container-ferramentas{
+    background-color: black;
+    display: inline-flex;
+    height: 300px;
+
+}
+
+.ico-recomendador{
+    background-image: url('/Styles/Icons/icone-recomendador.svg');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    width: 100%;
+}
+.card-Item p{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-align: center;
+}
+.card-Item{
+    background-color: rgb(249 244 244 / 13%);
+    margin: 30px 20px;
+    text-align: -webkit-center;
+    border-radius: 5px;
+    padding: 0px 10px;
+
+}
+
+#title-Card{
+    font-size: 20px;
+    font-weight: 900;
+}
+.iconeRecomendador{
+    background-image: url('/Styles/Icons/icone-recomendador.svg');
+    background-repeat: no-repeat;
+    
+}
+.iconeOrcamento{
+    background-image: url('/Styles/Icons/icone-orçamento.svg');
+    background-repeat: no-repeat;
+    
+}
+.iconeChecklist{
+    background-image: url('/Styles/Icons/icone-checklist.svg');
+    background-repeat: no-repeat;
+    
+}
+.iconeWhatsapp{
+    background-image: url('/Styles/Icons/icone-whatsapp.svg');
+    background-repeat: no-repeat;
+    
+}
+
+.icone{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
 }
