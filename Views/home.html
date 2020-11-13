@@ -15,61 +15,80 @@
 
 <body>
 
-    <header><!--CABEÇALHO-->
-        <div class="objectsNavegations">
-            <div class="brangingLogo">
-                <img src="/Styles/Logos/logoCheckapp-ICO.svg" alt="Logo Marca">
-            </div>
-            <div class="informationsBussines">
-                <div class="btnSobre">
-                    <button class="btn-informationsBussines" onclick="redirectSobre()">
-                        SOBRE
-                    </button>
-                </div>
-                <div class=" btnContact">
-                    <button class="btn-informationsBussines" onclick="redirectContato()">
-                        CONTATO
-                    </button>
+    <header id="header" class="hidden-header"><!--CABEÇALHO-->
+        <div class="header-container">
+            <div class="header-container-logo">
+                <img class="img-fluid" src="/Styles/Logos/logo_original.png" alt="Logo Marca">
+                <div class="brangingLogo">
+                    <img src="/Styles/Logos/logoCheckapp-ICO.svg" alt="Logo Marca">
                 </div>
             </div>
-        </div>
-        <div class="objectsActions">
-            <div class="btnLogin">
-                <button class="btn-objectsActions" onclick="redirectLogin()">
-                    <div class="btnLogin">
-                        <div class="iconeLogin"></div>
-                        <p>Login</p>
+            <div class="header-container-buttons">
+                <div class="menu-login">
+                    <div class="header-container-buttons-box">
+                        <div class="header-user">
+                            <div class="btnLogin" onclick="redirectLogin()">
+                                <img class="iconeMenu" src="/Styles/Icons/user.svg" alt="Logo Marca">
+                            </div>
+                        </div>
                     </div>
-                </button>
-            </div>
-            <div class="btnRegister">
-                <button class="btn-objectsActions" id="btnPadrao" onclick="redirectRegistro()">
-                    ABRA SUA CONTA
-                </button>
+                </div>
+                <div class="backdrop-menu-site">
+                    <div class="header-container-buttons-box">
+                        <div class="header-menu">
+                            <div class="btn-menu" onclick="abrirMenu()">
+                                <img class="iconeMenu" src="/Styles/Icons/menu.svg" alt="Logo Marca">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <nav><!--SLIDE-->
         <div class="containerApresentation">
-            <div>
-                <h1>Oficina Digital</h1>
-                <h3>A transformação em serviços automotivos </h3>
-               
+            <div class="containerApresentation-Infos">
+                <div class="backgroud-mobile">
+                    <img src="/Styles/Logos/ilustra-home-01.svg" alt="backgraund-home">
+                </div>
+                <div>
+                    <h1>Oficina Digital</h1>
+                    <h3>A transformação em serviços automotivos </h3>
+                
+                </div>
+                <div class="interactionsNav">
+                    <div id="btnPadrao" onclick="redirectLogin()">COMECE AGORA</div>
+                    <div id="btnVideo" onclick="execultarVideo()">VEJA O VÍDEO</div>
+                </div>
             </div>
-            <div class="interactionsNav">
-                <button id="btnPadrao" onclick="redirectLogin()">
-                    COMECE AGORA
-                </button>
-                <button id="btnVideo" onclick="execultarVideo()">
-                    VEJA O VÍDEO
-                </button>
+            <div class="containerApresentation-background">
+                <div class="image-backgroud">
+                    <img src="/Styles/Logos/ilustra-home-01.svg" alt="backgraund-home">
+                </div>
             </div>
             <br>
             <br>
             <br>
         </div>
     </nav>
+
+    <!--MENU-->
+
+    <div id="Container-menu" class="">
+        <div class="conteudo-Menu">
+            <div id='btnFechar-Menu' onclick="fecharMenu()"></div>
+            <div class="Container-menu-itens">
+                <div class="home itens-menu" onclick="redirectHome ()">Home</div>
+                <div class="sobre itens-menu" onclick="redirectSobre ()">Sobre nós</div>
+                <div class="sobre itens-menu" onclick="redirectRegistro ()">Faça parte</div>
+                <div class="sobre itens-menu" onclick="redirectContato ()">Contato</div>
+            </div>
+            <div class="container-menu-redeSocial">
+                
+            </div>
+        </div>
+    </div>
 
     
 
@@ -82,9 +101,7 @@
             </video>
         </div>
 
-        <button id='btnFechar' onclick="fecharVideo()">
-            
-        </button>
+        <div id='btnFechar' onclick="fecharVideo()"></div>
 
     </div>
 
@@ -116,6 +133,15 @@
 
     function fecharVideo(){
         document.getElementById('Container').style.display = 'none'; // fecha display 
+    }
+    
+
+    function abrirMenu(){
+        document.getElementById('Container-menu').style.display = 'flex'; 
+    }
+
+    function fecharMenu(){
+        document.getElementById('Container-menu').style.display = 'none'; 
     }
     </script>
 

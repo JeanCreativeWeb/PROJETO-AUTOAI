@@ -2,12 +2,10 @@
 
 body{
     background-color: #0b090a;
-    background-image: url(/Styles/Images/backgraund-home.svg);
-    background-repeat: no-repeat;
-    background-position-x: 750px;
-    background-position-y: 160px;
-    background-size: 500px;
+    
 }
+
+
 @media only screen and (max-width: 1200px){
     body{
         background-position-x: 1000px;
@@ -43,11 +41,26 @@ body{
     }
 }
 
-.containerApresentation h1{
+.containerApresentation-Infos div h1{
     font-family: 'Ubuntu', sans-serif;
     font-size: 70px;
     font-weight: 900;
-    color: yellow;
+    color: #ffd200;
+}
+@media only screen and (max-width: 800px){
+    .containerApresentation-Infos div h1{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .containerApresentation-Infos div h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 300px){
+    .containerApresentation-Infos div h1{
+        font-size: 20px;
+    }
 }
 
 .containerApresentation h3{
@@ -56,19 +69,61 @@ body{
     font-weight: 500;
     color: white;
     margin-top: 30px;
-
 }
 
-
-.containerApresentation{
-    padding: 100px 50px 50px 100px;
-    width: 100%;
-}
-
-.interactionsNav{
-    margin-top:50px;
+.containerApresentation-Infos{
+    margin-top: 150px;
+    width: 50%;
+    display: block;
 }
 @media only screen and (max-width: 800px){
+    .containerApresentation-Infos{
+        width: 100%;
+        text-align: -webkit-center;
+    }
+}
+.containerApresentation{
+    padding: 100px;
+    width: 100%;
+    display: flex;
+}
+.containerApresentation-background{
+    margin-top: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.containerApresentation-background .image-backgroud img{
+   width: 100%;
+}
+@media only screen and (max-width: 800px){
+    .containerApresentation-background{
+        display: none;
+    }
+}
+.backgroud-mobile {
+    display: none;
+    
+}
+@media only screen and (max-width: 800px){
+    .backgroud-mobile{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 800px){
+    .backgroud-mobile img{
+        width: 50%;
+    }
+}
+.interactionsNav{
+    margin-top:50px;
+    display: flex;
+}
+@media only screen and (max-width: 1044px){
     .interactionsNav{
         display: block;
     }
@@ -108,17 +163,14 @@ nav{
         width: 300px;
     }
 }
-
 @media only screen and (max-width: 300px){
     .videoAnimation{
         width: 200px;
     }
 }
-
 .mostrar .modal {
     animation: modal 0.1s;
 }
-
 #Container{
     background-color: rgba(0, 0, 0, .9);
     width: 100vw;
@@ -131,52 +183,18 @@ nav{
     justify-content: center;
     align-items: center;
 }
-
-
 #btnFechar{
     position: fixed;
-    margin-top: -214px;
-    margin-left: 400px;
+    margin-left: 850px;
+    margin-top: -400px;
     background-image: url(/Styles/Icons/Close-ICO.svg);
     background-size: 30px;
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
     padding: 40px 40px;
+    cursor: pointer;   
 }
-
-@media only screen and (max-width: 1200px){
-    #btnFechar{
-        margin-left: 300px;
-    }
-}
-
-@media only screen and (max-width: 950px){
-    #btnFechar{
-        margin-left: 250px;
-    }
-}
-
-@media only screen and (max-width: 700px){
-    #btnFechar{
-        margin-left: 200px;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    #btnFechar{
-        margin-left: 150px;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    #btnFechar{
-        margin-left: 100px;
-    }
-}
-
-
-
 .conteudo{
     background: white;
     width: 70%;

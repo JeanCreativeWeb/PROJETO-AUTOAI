@@ -14,100 +14,387 @@
 </head>
 
 <body>
-    
-    <header><!--CABEÇALHO-->
-        <div class="objectsNavegations">
-            <div class="brangingLogo">
-                <img src="/Styles/Logos/logoCheckapp-ICO.svg" alt="Logo Marca" onclick="redirectHome()">
-            </div>
-            <div class="informationsBussines">
-                <div class="btnSobre">
-                    <button class="btn-informationsBussines">
-                        SOBRE
-                    </button>
-                </div>
-                <div class=" btnContact">
-                    <button class="btn-informationsBussines" onclick="redirectContato()">
-                        CONTATO
-                    </button>
+    <header id="header" class="hidden-header"><!--CABEÇALHO-->
+        <div class="header-container">
+            <div class="header-container-logo">
+                <img class="img-fluid" onclick="redirectHome ()" src="/Styles/Logos/logo_original.png" alt="Logo Marca">
+                <div class="brangingLogo" onclick="redirectHome ()">
+                    <img src="/Styles/Logos/logoCheckapp-ICO.svg" alt="Logo Marca">
                 </div>
             </div>
-        </div>
-        <div class="objectsActions">
-            <div class="btnLogin">
-                <button class="btn-objectsActions" onclick="redirectLogin()">
-                    <div class="btnLogin">
-                        <div class="iconeLogin"></div>
-                        <p>Login</p>
+            <div class="header-container-buttons">
+                <div class="menu-login">
+                    <div class="header-container-buttons-box">
+                        <div class="header-user">
+                            <div class="btnLogin" onclick="redirectLogin()">
+                                <img class="iconeMenu" src="/Styles/Icons/user.svg" alt="Logo Marca">
+                            </div>
+                        </div>
                     </div>
-                </button>
-            </div>
-            <div class="btnRegister">
-                <button class="btn-objectsActions" id="btnPadrao" onclick="redirectRegistro()">
-                    ABRA SUA CONTA
-                </button>
+                </div>
+                <div class="backdrop-menu-site">
+                    <div class="header-container-buttons-box">
+                        <div class="header-menu">
+                            <div class="btn-menu" onclick="abrirMenu()">
+                                <img class="iconeMenu" src="/Styles/Icons/menu.svg" alt="Logo Marca">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <nav><!--SLIDE-->
+    <!--SLIDE 1-->
+    
+    <nav id="Container-nav">
         <div class="containerApresentation">
-            <div>
-                <h1>Revolução digital
+            <div class="containerApresentation-introdution">
+                <h1 class="title">Somos a solução ideal para sua oficina
                 </h1>
-                <p>Inteligência artificial multifuncional e multiplataforma projetada para recomendar produtos automotivos, padronizar o atendimento e facilitar a rotina dos colaboradores.</p>
+                <p class="sub-title">Inteligência artificial multiplataforma projetada para recomendar produtos, padronizar o atendimento e facilitar a rotina operacional</p>
             </div>
         </div>
     </nav>
 
+    <!--SLIDE 2-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section>
+        <div class="container-slide1">
+            <div class="container-slide1-banner">
+                <div class="container-slide1-imageBanner">
+                    <div class="container-Image">
+                        <img src="/Styles/Icons/CheckApp-TelaInicial.svg" alt="">
+                    </div>
+                </div>
+                <div class="container-slide1-textApresentation">
+                    <div class="container-slide1-introduction">
+                        <h2>Com CheckApp</h2>
+                        <h2>é répido e fácil</h2>
+                    </div>
+                    <div class="card-Text">
+                        <p>
+                             Checklist personalizável para carros, motos e caminhões com recomendações de lubrificantes, filtros, pneus, palhetas, baterias, velas, amortecedores e muito mais.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SLIDE 3-->
+   
+    <br>
+
+    <section>
+        <div class="container-slide3">
+            <div class="container-slide3-banner">
+                <div class="container-slide3-textApresentation">
+                    <div class="container-slide3-introduction">
+                        <h2>Rotina operacional </h2>
+                        <h2>mais inteligente</h2>
+                    </div>
+                    <div class="card-Text-Slide3">
+                        <p>
+                            O modo de utilização para a equipe de pista indica a peça exata para qualquer tipo de veículo, através da placa.
+                        </p>
+                    </div>
+                </div>
+                <div class="container-slide3-imageBanner">
+                    <div class="container-Image">
+                        <img src="/Styles/Images/telaRecomendação-checkapp.svg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!--SLIDE 4-->
+    <br>
+
+    <section>
+        <div class="container-slide1">
+            <div class="container-slide1-banner">
+                <div class="container-slide1-imageBanner">
+                    <div class="container-Image">
+                        <img src="/Styles/Icons/CheckApp-TelaInicial.svg" alt="">
+                    </div>
+                </div>
+                <div class="container-slide1-textApresentation">
+                    <div class="container-slide1-introduction">
+                        <h2>Agilidade</h2>
+                        <h2>e segurança</h2>
+                    </div>
+                    <div class="card-Text">
+                        <p>
+                            Criptografia de sessão AES (256 bits) de ponta a ponta, senhas e usuários individuais e registro de logs em todas ações.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SLIDE 5-->
+   
+    <br>
+
+    <section>
+        <div class="container-slide3">
+            <div class="container-slide3-banner">
+                <div class="container-slide3-textApresentation">
+                    <div class="container-slide3-introduction">
+                        <h2>Responsivo para </h2>
+                        <h2>multiplataformas</h2>
+                    </div>
+                    <div class="card-Text-Slide3">
+                        <p>
+                            Nosso sistema é Web! Você não precisa instalar nada em seu computador, tablet ou celular. A interface do usuário é claramente organizada, simples, fácil de usar e rápida de operar.
+                        </p>
+                    </div>
+                </div>
+                <div class="container-slide3-imageBanner">
+                    <div class="container-Image">
+                        <img id="img-telaResponsiva" src="/Styles/Images/telaResponsiva-checkapp.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--SLIDE 6-->
+
+
+    
     <section class="section-intro">
         <div class="background-Intro">
-            <div class="desktop-image"></div>
+            <div class="desktop-image">
+                <img id="teladashboard" src="/Styles/Images/teladashboard-checkapp.svg" alt="">
+            </div>
         </div>
         <div class="text-introduction">
-            <h1>Prático</h1>
-            <p>
-                O modo de utilização para a equipe de pista indica o lubrificante exato para qualquer tipo de veículo através da placa.
-            </p>
+            <h2>Prático</h2>
             <p> 
-                Ajuda a profissionalizar os processos, gerar maior oferta de produtos e conquistar a confiança do consumidor.
+                Os Relatórios podem ser extraídos em Excel ou analisados através do próprio sistema. É disponibilizado Dashboard de faturamento, ticket médio de vendas, totais de vendas, orçamentos em aberto, vendas em andamento, vendas por operador e muito mais.
             </p>
         </div>
     </section>
+
+
     <section class="section-ferramentas">
         <div class="container-ferramentas">
             <div class="card-Item">
                 <div class="ico-recomendador"></div>
                 <div class="icone iconeRecomendador"></div>
-                <p id="title-Card">RECOMENDADOR</p>
+                <p id="title-Card">Recomendador</p>
                 <p>
-                    Acesso fácil e prático a aplicações para carros, motos e caminhões
+                    Acesso a aplicações para carros, motos e caminhões
                 </p>
             </div>
             <div class="card-Item">
                 <div class="icone iconeChecklist"></div>
-                <p id="title-Card">CHECKLIST</p>
+                <p id="title-Card">checklist</p>
                 <p>
-                    Padronização do seu atendimento com checklist personalizável
+                    Atendimento diferenciado e personalizado
                 </p>
             </div>
             <div class="card-Item">
                 <div class="icone iconeOrcamento"></div>
-                <p id="title-Card">ORÇAMENTOS</p>
+                <p id="title-Card">Orçamentos</p>
                 <p>
-                    Personalizado para loja, pode ser impresso ou enviado para o cliente
+                    Pode ser impresso ou enviado para o cliente
                 </p>
             </div>
             <div class="card-Item">
                 <div class="icone iconeWhatsapp"></div>
-                <p id="title-Card">WHATSAPP</p>
+                <p id="title-Card">WhatsApp</p>
                 <p>
-                    Revisão programada! O sistema avisa o cliente da revisão do veículo
+                    O sistema avisa o cliente da revisão do veículo
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!--SLIDE 7-->
+
+    <section class="section-veicles">
+        <div class="text-sectionVeicles">
+            <div class="text-veicles">
+                <h1>Atualizado</h1>
+                <p>Diariamente incluimos e atualizamos veículos nacionais e importados, garantindo a exatidão das especificações do manual de manutenção e catálogos automotivos.
+                </p>
+            </div>
+        </div>
+        <div class="veiclesCard">
+            <div class="itens-one">
+                <div class="card">
+                    <div class="car"></div>
+                </div>
+                <div class="card">
+                    <div class="truck"></div>
+                </div>
+            </div>
+            <div class="itens-two">
+                <div class="card">
+                    <div class="motocycle"></div>
+                </div>
+                <div class="card">
+                    <div class="truck-leve"></div>
+                </div>
             </div>
         </div>
 
     </section>
+
+    <!--SLIDE 8-->
+
+    <section class="section-cardInfos">
+        <div class="text-titleCard">
+            <p>Principais vantagens</p>
+        </div>
+        <div class="cardInfos">
+            <div id="cardAtendimento" class="card-Item-Infos">
+                <div class="icone icone-Atendimentos"></div>
+                <p id="title-Card-cardInfos">Atendimento</p>
+                <p>
+                    Defina um padrão de atendimento e aumente a oferta de produtos
+                </p>
+            </div>
+            <div id="cardPromocao" class="card-Item-Infos">
+                <div class="icone icone-Descontos"></div>
+                <p id="title-Card-cardInfos">Promoções</p>
+                <p>
+                    Crie uma promoção com um código de desconto e envie aos clientes
+                </p>
+            </div>
+            <div class="card-Item-Infos">
+                <div class="icone icone-Servicos"></div>
+                <p id="title-Card-cardInfos">Serviços</p>
+                <p>
+                    Acompanhe o status dos serviços em tempo real
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--SLIDE 9-->
+
+    <section class="section-integration">
+        <div class="container-Descrition-Integration">
+            <div class="container-Descrition-Integration-text">
+                <div id="text-titleCard-integration">
+                    <h2>Integrável</h2>
+                </div>
+                
+                <div class="textDescrition-Integration">
+                    <p>O CheckApp se integra com as melhores suluções do mercado para a atualização de produtos, preços e exportação de pré-venda de forma automática.</p>
+                </div>
+            </div>
+            <div class="background-image-integration">
+                <img id="background-image-integration" src="/Styles/Images/backgroun-integration.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--SLIDE 10-->
+
+    <section class="container-comentarios">
+        <div class="text-titleCard-comentarios">
+            <p>Checkapp na mídia</p>
+        </div>
+        <div class="container-comentarios-conteudo">
+            <div class="item-coment-descrition">
+                <div class="icone-comentarios">
+                    <img src="/Styles/Icons/chat-comment.svg" alt="icone Comentarios">
+                </div>
+                <div class="coment-descrition">
+                    <p class="coment-descrition-text">
+                        "Com a utilização do CheckApp pela equipe de pista, melhorou muito nossa eficiência operacional, atingindo a média de 07 trocas de óleo por dia, com crescimento das vendas de produtos premium e de agregados".
+
+                    </p>
+                    <p class="coment-descrition-user">Marco Antonio</p>
+                    <div class="line"></div>
+                    <p class="identification-loja">Rede Agricopel</p>
+                </div>
+            </div>
+
+            <div class="item-coment-descrition">
+                <div class="icone-comentarios">
+                    <img src="/Styles/Icons/chat-comment.svg" alt="icone Comentarios">
+                </div>
+                <div class="coment-descrition">
+                    <p class="coment-descrition-text">
+                        "Com as facilidades operacionais da CheckApp, cresceu a nossa eficiência e hoje na média efetuamos 09 trocas por dia, com elevado índice de vendas de produtos primum e de agregados de trocas de óleo".
+
+                    </p>
+                    <p class="coment-descrition-user">Marlene Runha</p>
+                    <div class="line"></div>
+                    <p class="identification-loja">Revenda Quatro Trevos</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    
+    <!--MENU-->
+
+    <div id="Container-menu" class="">
+        <div class="conteudo-Menu">
+            <div id='btnFechar-Menu' onclick="fecharMenu()"></div>
+            <div class="Container-menu-itens">
+                <div class="home itens-menu" onclick="redirectHome ()">Home</div>
+                <div class="sobre itens-menu" onclick="redirectSobre ()">Sobre nós</div>
+                <div class="sobre itens-menu" onclick="redirectRegistro ()">Faça parte</div>
+                <div class="sobre itens-menu" onclick="redirectContato ()">Contato</div>
+            </div>
+            <div class="container-menu-redeSocial">
+                
+            </div>
+        </div>
+    </div>
+
+    <!--MENU
+
+    <footer class="rodape-page">
+        <div class="links-rodape">
+            <p>Mapa do site</p>
+            <a href="">Home</a>
+            <a href="">Sobre nós</a>
+            <a href="">Faça parte</a>
+            <a href="">Contato</a>
+        </div>
+        <div class="contacts">
+            <div class="contacts-itens">
+                <div class="contacts-item">
+                    <div>icone</div>
+                    <div>descrição</div>
+                </div>
+                <div class="contacts-item">
+                    <div>icone</div>
+                    <div>descrição</div>
+                </div>
+                <div class="contacts-item">
+                    <div>icone</div>
+                    <div>descrição</div>
+                </div>
+                <div class="contacts-item">
+                    <div>icone</div>
+                    <div>descrição</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    -->
     
     <script type="text/javascript"> // redirecionamento de páginas
         function redirectHome (){
@@ -125,6 +412,16 @@
         function redirectRegistro (){
             window.location.href = "../Views/login.html";
         }
+
+        function abrirMenu(){
+        document.getElementById('Container-menu').style.display = 'flex'; 
+        }
+
+        function fecharMenu(){
+            document.getElementById('Container-menu').style.display = 'none'; 
+        }
+
+
     </script>
 
 </body>

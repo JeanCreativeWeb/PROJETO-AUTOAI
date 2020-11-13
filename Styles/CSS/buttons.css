@@ -8,6 +8,8 @@
     font-size: 20px;
     font-weight: 900;
     cursor: pointer;
+    text-align: center;
+    padding: 17px;
 }
 
 #btnPadrao:hover{
@@ -29,8 +31,10 @@
     border-width: medium;
     border-style: solid;
     cursor: pointer;
+    text-align: center;
+    padding: 16px;
 }
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 1044px){
     #btnVideo{
         margin-left: 0px;
         margin-top: 15px;

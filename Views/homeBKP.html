@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>INICIO</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--MEDIA QUERIES-->
+    <link rel="stylesheet" href="/Styles/CSS/home.css"><!--LINK ESTILOS-->
+    <link rel="stylesheet" href="/Styles/CSS/header.css"><!--LINK ESTILOS-->
+    <link rel="stylesheet" href="/Styles/CSS/buttons.css"><!--LINK ESTILOS-->
+    <link rel="stylesheet" href=""><!--LINK SCRIPTs-->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"><!--FONTE DOS TEXTOS-->
+</head>
+
+<body>
+
+    <header><!--CABEÇALHO-->
+        <div class="objectsNavegations">
+            <div class="brangingLogo">
+                <img src="/Styles/Logos/logoCheckapp-ICO.svg" alt="Logo Marca">
+            </div>
+            <div class="informationsBussines">
+                <div class="btnSobre">
+                    <button class="btn-informationsBussines" onclick="redirectSobre()">
+                        SOBRE
+                    </button>
+                </div>
+                <div class=" btnContact">
+                    <button class="btn-informationsBussines" onclick="redirectContato()">
+                        CONTATO
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="objectsActions">
+            <div class="btnLogin">
+                <button class="btn-objectsActions" onclick="redirectLogin()">
+                    <div class="btnLogin">
+                        <div class="iconeLogin"></div>
+                        <p>Login</p>
+                    </div>
+                </button>
+            </div>
+            <div class="btnRegister">
+                <button class="btn-objectsActions" id="btnPadrao" onclick="redirectRegistro()">
+                    ABRA SUA CONTA
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav><!--SLIDE-->
+        <div class="containerApresentation">
+            <div>
+                <h1>Oficina Digital</h1>
+                <h3>A transformação em serviços automotivos </h3>
+               
+            </div>
+            <div class="interactionsNav">
+                <button id="btnPadrao" onclick="redirectLogin()">
+                    COMECE AGORA
+                </button>
+                <button id="btnVideo" onclick="execultarVideo()">
+                    VEJA O VÍDEO
+                </button>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </nav>
+
+    
+
+    <!--POP-UP Video-->
+
+    <div id="Container" class="">
+        <div class="conteudo">
+            <video class="videoAnimation" controls>
+                <source src="/Styles/Video/CheckApp - Tecnologia para vender mais.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <button id='btnFechar' onclick="fecharVideo()">
+            
+        </button>
+
+    </div>
+
+
+
+    <script type="text/javascript">// REDIRECIONAMENTO
+
+    function redirectHome (){
+    window.location.href = "../Views/home.html";
+    }
+    function redirectContato (){
+    window.location.href = "../Views/contato.html";
+    }
+    function redirectSobre (){
+        window.location.href = "../Views/sobre.html";
+    }
+    function redirectLogin (){
+        window.location.href = "../Views/login.html";
+    }
+    function redirectRegistro (){
+        window.location.href = "../Views/registro.html";
+    }
+
+    // POP-UP
+
+    function execultarVideo(){
+        document.getElementById('Container').style.display = 'flex'; // adiciona display flex no elemento ID Container (que por padão é none) para mostrar o vídeo.
+    }
+
+    function fecharVideo(){
+        document.getElementById('Container').style.display = 'none'; // fecha display 
+    }
+    </script>
+
+</body>
+</html>

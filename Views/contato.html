@@ -15,37 +15,33 @@
 
 <body>
     
-    <header><!--CABEÇALHO-->
-        <div class="objectsNavegations">
-            <div class="brangingLogo">
-                <img src="/Styles/Logos/logoCheckapp-ICO.svg" alt="Logo Marca" onclick="redirectHome()">
-            </div>
-            <div class="informationsBussines">
-                <div class="btnSobre">
-                    <button class="btn-informationsBussines" onclick="redirectSobre()">
-                        SOBRE
-                    </button>
-                </div>
-                <div class=" btnContact">
-                    <button class="btn-informationsBussines">
-                        CONTATO
-                    </button>
+    <header id="header" class="hidden-header"><!--CABEÇALHO-->
+        <div class="header-container">
+            <div class="header-container-logo">
+                <img class="img-fluid" src="/Styles/Logos/logo_original.png" alt="Logo Marca">
+                <div class="brangingLogo">
+                    <img src="/Styles/Logos/logoCheckapp-ICO.svg" alt="Logo Marca">
                 </div>
             </div>
-        </div>
-        <div class="objectsActions">
-            <div class="btnLogin">
-                <button class="btn-objectsActions" onclick="redirectLogin()">
-                    <div class="btnLogin">
-                        <div class="iconeLogin"></div>
-                        <p>Login</p>
+            <div class="header-container-buttons">
+                <div class="menu-login">
+                    <div class="header-container-buttons-box">
+                        <div class="header-user">
+                            <div class="btnLogin" onclick="redirectLogin()">
+                                <img class="iconeMenu" src="/Styles/Icons/user.svg" alt="Logo Marca">
+                            </div>
+                        </div>
                     </div>
-                </button>
-            </div>
-            <div class="btnRegister">
-                <button class="btn-objectsActions" id="btnPadrao" onclick="redirectRegistro()">
-                    ABRA SUA CONTA
-                </button>
+                </div>
+                <div class="backdrop-menu-site">
+                    <div class="header-container-buttons-box">
+                        <div class="header-menu">
+                            <div class="btn-menu" onclick="abrirMenu()">
+                                <img class="iconeMenu" src="/Styles/Icons/menu.svg" alt="Logo Marca">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -110,6 +106,23 @@
         </div>
     </nav>
 
+    <!--MENU-->
+
+    <div id="Container-menu" class="">
+        <div class="conteudo-Menu">
+            <div id='btnFechar-Menu' onclick="fecharMenu()"></div>
+            <div class="Container-menu-itens">
+                <div class="home itens-menu" onclick="redirectHome ()">Home</div>
+                <div class="sobre itens-menu" onclick="redirectSobre ()">Sobre nós</div>
+                <div class="sobre itens-menu" onclick="redirectRegistro ()">Faça parte</div>
+                <div class="sobre itens-menu" onclick="redirectContato ()">Contato</div>
+            </div>
+            <div class="container-menu-redeSocial">
+                
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript">// redirecionamento de páginas
         function redirectHome (){
         window.location.href = "../Views/home.html";
@@ -135,6 +148,15 @@
         function redirectYoutube (){
             window.location.href = "https://www.youtube.com/channel/UCsGwccnjN8Ptsv7y7JvZg2w";
         }
+
+        function abrirMenu(){
+        document.getElementById('Container-menu').style.display = 'flex'; 
+        }
+
+        function fecharMenu(){
+            document.getElementById('Container-menu').style.display = 'none'; 
+        }
+    </script>
     </script>
 
 </body>
