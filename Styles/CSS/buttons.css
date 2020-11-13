@@ -40,7 +40,7 @@
 #btnVideo{
     background-color: transparent;
     border-radius: 5px;
-    border: 1px white;
+    border: 1px solid white;
     width: 250px;
     height: 60px;
     font-family: 'Ubuntu', sans-serif;
@@ -49,7 +49,6 @@
     color: white;
     margin-left: 20px;
     border-radius: 10px;
-    border-width: medium;
     border-style: solid;
     cursor: pointer;
     text-align: center;
@@ -65,6 +64,6 @@
 #btnVideo:hover{
     background-color: yellow;;
     color: black;
-    border: 1px yellow;
+    border: 1px yellow solid;
 }
 

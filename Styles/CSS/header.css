@@ -193,6 +193,71 @@
     color: white;
 }
 
+.menu-site-footer{
+    border: 1px solid black;
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 36px;
+}
+.menu-site-fotter-list{
+    list-style-type: none;
+    padding-left: 0;
+}
+.menu-site-footer-list-Item{
+    list-style-type: none;
+    padding-left: 0;
+}
+.menu-site-footer-list-Item a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1.67;
+    text-align: left;
+    margin: 10px auto;
+    background-position: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+
+.menu-site-footer-list-Item a:hover{
+    color: white;
+
+}
+
+.menu-site-footer-list-Item a i{
+    font-size: 21px;
+    line-height: 1.43;
+    text-align: center;
+    color: #f9df00;
+    margin-right: 30px;
+}
+
+.icone-Facebook{
+    background-image: url(/Styles/Icons/ico-facebook.svg);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.icone-Instagram{
+    background-image: url(/Styles/Icons/ico-instagram.svg);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.icone-YouTube{
+    background-image: url(/Styles/Icons/ico-youtube.svg);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
 
 
 

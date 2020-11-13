@@ -25,8 +25,9 @@ body{
     padding-top: 235px;
 }
 
-.containerApresentation h1{
+.containerApresentation div h1{
     margin: 0px;
+    color: #ffd200;
 }
 
 .contact-fones{
