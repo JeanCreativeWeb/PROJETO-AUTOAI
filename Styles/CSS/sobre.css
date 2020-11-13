@@ -268,8 +268,8 @@ body{
 
 .text-introduction h2{
     color: black;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 900;
     line-height: 15px;
     font-family: Ubuntu, sans-serif;
 }
@@ -391,8 +391,8 @@ body{
 }
 
 .text-sectionVeicles h1{
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 900;
     font-family: 'Ubuntu', sans-serif;
     margin-top: 139px;
 }
@@ -579,12 +579,12 @@ body{
     width: 100%;
     height: 800px;
     display: block;
-    padding: 100px;
-
 }
 
 .container-comentarios-conteudo{
     display: flex;
+    position: absolute;
+    padding: 48px 89px 0px 323px;
 }
 
 .item-coment-descrition{
@@ -593,8 +593,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.07) 0px 20px 40px 0px;
     background-color: white;
     margin: 29px 25px;
-    padding: 42px 11px;
-    background-color: #ffd200;
+    padding: 14px 11px;
     border-radius: 10px;
 }
 
@@ -624,7 +623,7 @@ body{
     font-style: oblique;
 }
 .coment-descrition{
-    padding: 35px 35px;
+    padding: 10px;
     
 }
 
@@ -639,7 +638,9 @@ body{
     text-align: center;
     font-size: 40px;
     font-weight: 900;
-    margin-block-end: 82px;
+    margin-block-end: 38px;
+    margin-top: 150px;
+    margin-block-end: 150px;
 }
 
 .rodape-page{
@@ -694,4 +695,30 @@ body{
 .contacts-itens{
     padding: 100px;
     border: 1px solid black;
+}
+
+.background-fundo{
+    width: 60%;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.07);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.container-action-Register{
+    background-image: url(/Styles/Images/banner-site.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 623px;
+}
+
+.container-action-Register-action{
+    padding: 196px 137px 56px 844px;
+}
+
+.container-action-Register-action h2{
+    font-family: Ubuntu, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+    color: black;
 }
