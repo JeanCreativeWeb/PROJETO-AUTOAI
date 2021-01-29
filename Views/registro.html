@@ -43,8 +43,17 @@
 
 
         <div class="login-form">
+            
             <div class="login-form-wrapperRegister">
+                <p class="alertMensage">Sucesso! Em breve entraremos em contato!</p>
                 
+                <!--
+                <p class="alertMensage">Sucesso! Em breve entraremos em contato!</p>
+                <p class="alertMensage">Erro! Senha deve conter ao menos 4 caracteres!</p>
+                <p class="alertMensage">Erro! Confirmação se senha incorreta!</p>
+                <p class="alertMensage">Erro! Necessário informar nome do contato!</p>
+                <p class="alertMensage">Erro! CNPJ já cadastrado!</p>
+                -->
                 <form class="formularioRegister">
 
                     <div class="itensForm">
@@ -58,14 +67,19 @@
                             <input type="text" class="form-control" id="CNPJ"> <!--validar type-->
                         </div>
 
-                    </div>
+                        <div class="form-group">
+                            <label for="eMail" id="contato-label">Nome do Contato</label>
+                            <input type="email" class="form-control" id="contato">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="eMail">E-mail</label>
-                        <input type="email" class="form-control" id="eMail">
                     </div>
-
                     <div class="contactFone">
+                        
+                        <div class="form-group">
+                            <label for="eMail">E-mail</label>
+                            <input type="email" class="form-control" id="eMail">
+                        </div>
+
                         <div class="form-group">
                             <label for="dddCidade" class="labelddd">DDD</label>
                             <input type="TEXT" class="form-control" id="dddCidade"> <!--validar type-->
@@ -73,6 +87,18 @@
 
                         <div class="form-group">
                             <label for="telefone" class="labelTelefone">Telefone</label>
+                            <input type="email" class="form-control" id="telefone">
+                        </div>
+                    </div>
+
+                    <div class="contactFone">
+                        <div class="form-group">
+                            <label for="dddCidade" class="labelddd">Estado</label>
+                            <input type="TEXT" class="form-control" id="dddCidade"> <!--validar type-->
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone" class="labelTelefone">Cidade</label>
                             <input type="email" class="form-control" id="telefone">
                         </div>
                     </div>

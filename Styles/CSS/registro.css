@@ -7,8 +7,7 @@
 
 .itensForm{
     display: inline-flex;
-    justify-content: space-between;
-    padding-bottom: 10px;    
+    justify-content: space-between;   
 }
 
 .itensForm input{
@@ -20,18 +19,15 @@
 
 .passwordForm{
     display: inline-flex;
+    margin-top: 10px;
 }
 
-.labelTelefone{
-    margin-left: 10px;
-}
 
-.labelSenhaValidation{
-    margin-left: 10px;
-}
-
-.labelCNPJ{
-    margin-left: 10px;
+.form-group{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+    margin: 0px 4px;
 }
 
 
@@ -45,35 +41,9 @@
     margin-top: 10px;
     
 }
-
-#CNPJ{
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-#dddCidade{
-    margin-top: 10px;
-}
-#telefone{
-    margin-top: 10px;
-    margin-left: 10px;
-}
-#nomeFantasia{
-    margin-top: 10px;
-}
-#senhaValidation{
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-
 .formularioRegister button{
     margin-top: 25px;
 }
-
-
-
-
 
 @media screen and (max-width: 500px){
 
@@ -133,8 +103,8 @@
 
 
 .login-form-wrapperRegister{
-    width: 580px;
-    height: 488px;
+    width: 780px;
+    height: 513px;
     border-radius: 8px;
     padding: 56px;
     background-color: #fff;
@@ -162,11 +132,10 @@
 }
 
 .login-form-wrapperRegister form .form-group input{
-    padding: 15px 35px;
     font-family: "Montserrat-Light";
     font-size: 15px;
     color: #272728;
-    width: 100%;
+    width: 215px;
     height: 40px;
     padding: 10px 16px 10px 16px;
     border: solid 1px #e1e1e1;
@@ -174,4 +143,17 @@
     border-radius: 3px;
     transition: linear .2s;
     display: block;
+    margin-block-start: 10px;
+}
+
+.alertMensage{
+    color: greenyellow;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-inline-end: 26px;
+    margin-block-end: 19px;
+}
+
+#contato-label{
+    margin-block-end: 19px;
 }
